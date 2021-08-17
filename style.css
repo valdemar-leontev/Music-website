@@ -1,76 +1,87 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 .container {
-    height: 100vh;
-    width: 100%;
-    background-image: url(images/image.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar {
-    width: 90%;
-    padding: 15px 0px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 90%;
+  padding: 15px 0px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 span {
-    font-size: 30px;
-    color: #f7dbd6;
+  font-size: 30px;
+  color: #f7dbd6;
+
+  cursor: pointer;
 }
 
 .navbar ul li {
-    display: inline-block;
-    list-style: none;
-    text-decoration: none;
-    margin: 0px 15px;
-} 
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  margin: 0px 15px;
+}
 
 .navbar ul li a {
-    text-decoration: none;
-    font-size: 15px;
-    color: rgb(80, 80, 80);
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(133, 133, 133);
+  margin-right: 30px;
+
+  transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+  color: #000000;
+  text-shadow: 2px 2px 2px #87a19d;
 }
 
 .content {
-    top: 30%;
-    width: 100%;
-    position: absolute;
+  top: 30%;
+  width: 100%;
+  position: absolute;
 }
 
 .left-column {
-    margin-left: 6%;
+  margin-left: 6%;
 }
 
 .left-column h1 {
-    width: 100px;
-    color: white;
-    font-size: 90px;
-    float: left;
+  width: 100px;
+  color: white;
+  font-size: 90px;
+  float: left;
 }
 
 .right-column {
-    float: right;
-    margin-right: 6%;
-    margin-top: 120px;
-    display: flex;
-    align-items: center;
+  float: right;
+  margin-right: 6%;
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
 }
 
 .right-column p {
-    color: rgb(80, 80, 80);
-    font-size: 20px;
+  color: rgb(133, 133, 133);
+  font-size: 20px;
+  margin-right: 20px;
 }
 
 #icon {
-    width: 80px;
-    cursor: pointer;
+  width: 80px;
+  cursor: pointer;
 }
