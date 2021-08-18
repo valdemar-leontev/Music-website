@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,65 @@
     <title>Music website</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
+    <section class="container">
+
         <header class="navbar">
-            <!-- <img src="images/logo2.png" class="logo"/> -->
             <span>Inspiration</span>
 
             <ul>
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#product-anchor">PRODUCTS</a></li>
                 <li><a href="#">CONNECT</a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">HELP</a></li>
             </ul>
         </header>
 
-        <div class="content">
-            <div class="left-column"><h1>THE REAL SOUND</h1></div>
+        <section class="content">
+            <div class="left-column">
+                <h1>THE REAL SOUND</h1>
+            </div>
             <div class="right-column">
                 <p>Click here to listen</p>
                 <img src="images/play.png" id="icon">
             </div>
+        </section>
+
+    </section>
+
+    <main class="product-page">
+        <div id="product-anchor" style="height: 50px;"></div>
+
+        <div class="first-prod-card">
+            <div class="first-text-card">
+                <h1 id="product-page-anchor">Безмятежный белый</h1>
+                <p>
+                    Безмятежный белый — это новый цвет, который воплощает концепцию тишины и спокойствия. Серия
+                    наушников WH-1000XM4 в этом цвете ограничена. Наушники в цвете «безмятежный белый» имеют
+                    перламутровый отлив, что придает оттенку глубину и создает особый эффект.
+                </p>
+            </div>
+
+            <div class="first-prod-img"></div>
         </div>
-    </div>
+
+        <div class="second-prod-card">
+            <div class="second-prod-img"></div>
+
+            <div class="second-text-card">
+                <h1>Никаких проводов и отличный звук</h1>
+                <p>
+                    Технология LDAC позволяет передавать в три раза больше данных по сравнению с традиционными
+                    беспроводными решениями BLUETOOTH.
+                </p>
+            </div>
+        </div>
+        <footer class="footer" style="height: 50px;"></footer>
+    </main>
+
+
 
     <audio id="mySong">
         <source src="images/song.mp3" type="audio/mp3">
@@ -50,4 +87,5 @@
         }
     </script>
 </body>
+
 </html>

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  user-select: none;
 }
 
 .container {
@@ -9,22 +10,33 @@
   width: 100%;
   background-image: url(images/image.png);
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
+
+  background-attachment: fixed;
 }
 
 .navbar {
-  width: 90%;
+  width: 100%;
   padding: 15px 0px;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: white;
 }
 
 span {
+  margin-left: 30px;
+
   font-size: 30px;
-  color: #f7dbd6;
+  color: #c5e8e2;
 
   cursor: pointer;
 }
@@ -46,8 +58,7 @@ span {
 }
 
 .navbar ul li a:hover {
-  color: #000000;
-  text-shadow: 2px 2px 2px #87a19d;
+  color: #c5e8e2;
 }
 
 .content {
@@ -84,4 +95,81 @@ span {
 #icon {
   width: 80px;
   cursor: pointer;
+}
+
+.product-page {
+  height: 100vh;
+  width: 100%;
+}
+
+.first-prod-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.first-text-card {
+  text-align: center;
+
+  width: 30%;
+  font-size: 25px;
+  margin: 100px 0px 0px 100px;
+
+  background: -webkit-linear-gradient(120deg, #f8850f, #064c9c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.first-text-card h1 {
+  margin-bottom: 30px;
+}
+
+.first-prod-img {
+  width: 50%;
+  height: 70vh;
+
+  background-image: url(images/akhil-yerabati-Q2uV5TkjNz8-unsplash.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin: 50px 50px 0px 0px;
+}
+
+.second-prod-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  margin-top: 50px;
+}
+
+.second-text-card {
+  text-align: center;
+
+  width: 30%;
+  font-size: 25px;
+  margin: 100px 100px 0px 0px;
+
+  background: -webkit-linear-gradient(120deg, #ffacca 40%, #069c6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.second-text-card h1 {
+  margin-bottom: 50px;
+}
+
+.second-prod-img {
+  width: 50%;
+  height: 70vh;
+
+  background-image: url(images/ervo-rocks-Zam8TvEgN5o-unsplash.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin: 50px 0px 0px 50px;
 }
